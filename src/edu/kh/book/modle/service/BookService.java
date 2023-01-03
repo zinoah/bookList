@@ -214,45 +214,10 @@ public class BookService {
 	// 즐겨찾기 추가
 	public String addFavorit() {
 		
-		if(bookList == null) {
-			System.out.println("저장된 도서가 없습니다.");
-		}
-		
-		FileWriter fw = null; 
-		
-		try {
-			
-			fw = new FileWriter("favorites.txt"); 
-			
-			
-			System.out.println("즐겨찾기 할 도서의 인덱스 번호를 입력하세요 : ");
-			int input = sc.nextInt();
-			
-			
-			favList.add(bookList.get(input));
-			
-			System.out.println();
-			
-			
-		} catch(IOException e) {
-			
-			e.printStackTrace();
-			
-		} finally {
-			try {
-				
-				fw.close();
-				
-			} catch (IOException e) {
-				
-				e.printStackTrace();
-				
-			}
-		}
 		
 		
-	return "저장완료";
-		
+	return "";
+	
  }
 		
 	
